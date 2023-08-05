@@ -1,0 +1,102 @@
+div.title{
+	text-align: center;
+	/*border-bottom: 3px solid; #cccccc ;*/
+
+	 font-family: 'Roboto';
+	 padding: 0px 0px 0px;
+	box-shadow: 0px 2px 2px #787878, 0px 0px 5px #787878;
+	width:50%;
+	margin: auto;
+	background-color:lightcyan;
+	border-radius: 25px;
+}
+
+h3{
+	background-color: #E0FFF0;
+	width: 50%;
+	margin: auto;
+	padding: 10px;
+
+	box-shadow: 0px 2px 2px #787878, 0px 0px 5px #787878;
+}
+img{
+	float: right;
+	box-shadow: 0px 2px 2px #787878, 0px 0px 5px #787878;
+	border-radius: 25px;
+	margin: auto;
+	width: 33%;
+}
+section{
+	
+	box-shadow: 0px 2px 2px #787878, 0px 0px 5px #787878;
+	width: 50%;
+	margin: auto;
+	padding: 10px;
+	background-color:white;
+}
+
+body{
+	background-color:#E0F0FF;
+	font-family: 'Roboto'
+}
+
+.DownloadBtn{
+	background-color: lightcyan;
+	overflow: hidden;
+	box-shadow: 0px 1px 1px #787878, 0px 0px 5px #787878;
+	font-family: 'Roboto';
+	width:fit-content;
+	border-radius: 25px;
+	display: block;
+  margin: 0 auto;
+}
+	.DownloadBtn a {
+		color: black;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+		border-radius: 25px;
+		/* box-shadow: 0px 1px 1px #787878, 0px 0px 5px #787878;*/
+	  }
+
+	  .DownloadBtn a:hover {
+		background-color: rgb(206, 202, 202);
+		color: black;
+		box-shadow: 0px 1px 1px #787878, 0px 0px 5px #787878;
+	  }
+
+.topnav {
+	background-color: lightcyan;
+	overflow: hidden;
+	box-shadow: 0px 1px 1px #787878, 0px 0px 5px #787878;
+	font-family: 'Roboto';
+	width:fit-content;
+	border-radius: 25px;
+
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	/* box-shadow: 0px 1px 1px #787878, 0px 0px 5px #787878;*/
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+	background-color: rgb(206, 202, 202);
+	color: black;
+	box-shadow: 0px 1px 1px #787878, 0px 0px 5px #787878;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+	background-color: rgb(206, 202, 202);
+	color: black;
+	
+  }
