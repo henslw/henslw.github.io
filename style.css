@@ -1,4 +1,4 @@
-div.title{
+.title{
 	text-align: center;
 	/*border-bottom: 3px solid; #cccccc ;*/
 
@@ -9,6 +9,22 @@ div.title{
 	margin: auto;
 	background-color:lightcyan;
 	border-radius: 25px;
+}
+header{
+	background-color: lightcyan;
+	box-shadow: 0px 1px 1px #787878, 0px 0px 5px #787878;
+	padding: 10px;
+	text-align: center;
+	border-radius: 25px;
+	width:fit-content;
+	display: block;
+	margin: 0 auto;
+	
+}
+h1{
+	margin-top: 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
 }
 
 h3{
@@ -25,7 +41,42 @@ img{
 	border-radius: 25px;
 	margin: auto;
 	width: 33%;
+	transition: filter 0.3s ease;
 }
+
+section p:hover img{
+	filter: blur(1.5px);
+}
+
+.project-container:hover img{
+	filter: blur(1.5px);
+}
+
+
+.project-container {
+    position: relative;
+}
+
+.project-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+	padding: 10px;
+	font-family: 'Roboto';
+	font-size: 16px;
+	border-radius: 5px;
+	pointer-events: none;
+	transition: opacity 0.3s ease;
+}
+
+.project-container:hover .project-text {
+    opacity: 1;
+}
+
 section{
 	
 	box-shadow: 0px 2px 2px #787878, 0px 0px 5px #787878;
@@ -33,11 +84,13 @@ section{
 	margin: auto;
 	padding: 10px;
 	background-color:white;
+	
 }
 
 body{
 	background-color:#E0F0FF;
 	font-family: 'Roboto'
+	
 }
 
 .DownloadBtn{
@@ -49,6 +102,7 @@ body{
 	border-radius: 25px;
 	display: block;
   margin: 0 auto;
+  
 }
 	.DownloadBtn a {
 		color: black;
@@ -71,14 +125,15 @@ body{
 	overflow: hidden;
 	box-shadow: 0px 1px 1px #787878, 0px 0px 5px #787878;
 	font-family: 'Roboto';
-	width:fit-content;
+	
 	border-radius: 25px;
-
+	text-align: center;
+	
   }
   
   /* Style the links inside the navigation bar */
   .topnav a {
-	float: left;
+	display: inline-block;
 	color: black;
 	text-align: center;
 	padding: 14px 16px;
