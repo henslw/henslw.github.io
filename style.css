@@ -7,11 +7,12 @@
 	box-shadow: 0px 2px 2px #787878, 0px 0px 5px #787878;
 	width:50%;
 	margin: auto;
-	background-color:lightcyan;
+	background-color:#FAF5E9;
 	border-radius: 25px;
+	color:#003400;
 }
 header{
-	background-color: lightcyan;
+	background-color:#FAF5E9;
 	box-shadow: 0px 1px 1px #787878, 0px 0px 5px #787878;
 	padding: 10px;
 	text-align: center;
@@ -19,6 +20,7 @@ header{
 	width:fit-content;
 	display: block;
 	margin: 0 auto;
+	color:#003400;
 	
 }
 h1{
@@ -28,7 +30,7 @@ h1{
 }
 
 h3{
-	background-color: #E0FFF0;
+	background-color: #FFCC00;
 	width: 50%;
 	margin: auto;
 	padding: 10px;
@@ -95,18 +97,19 @@ section{
 	width: 50%;
 	margin: auto;
 	padding: 10px;
-	background-color:white;
-	
+	background-color:#FAF5E9;
+	color: #003400;
 }
 
 body{
-	background-color:#E0F0FF;
+	/* background-image: linear-gradient(black, #FAF5E9);*/
 	font-family: 'Roboto'
+	
 	
 }
 
 .DownloadBtn{
-	background-color: lightcyan;
+	background-color:#FFCC00;
 	overflow: hidden;
 	box-shadow: 0px 1px 1px #787878, 0px 0px 5px #787878;
 	font-family: 'Roboto';
@@ -114,10 +117,11 @@ body{
 	border-radius: 25px;
 	display: block;
   margin: 0 auto;
+   
   
 }
 	.DownloadBtn a {
-		color: black;
+		color: #003400;
 		text-align: center;
 		padding: 14px 16px;
 		text-decoration: none;
@@ -127,13 +131,13 @@ body{
 	  }
 
 	  .DownloadBtn a:hover {
-		background-color: rgb(206, 202, 202);
-		color: black;
+		background-color: #FFE88E;
+		color: #003400;
 		box-shadow: 0px 1px 1px #787878, 0px 0px 5px #787878;
 	  }
 
 .topnav {
-	background-color: lightcyan;
+	background-color: #FAF5E9;
 	overflow: hidden;
 	box-shadow: 0px 1px 1px #787878, 0px 0px 5px #787878;
 	font-family: 'Roboto';
@@ -146,7 +150,7 @@ body{
   /* Style the links inside the navigation bar */
   .topnav a {
 	display: inline-block;
-	color: black;
+	color: #003400;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -156,14 +160,14 @@ body{
   
   /* Change the color of links on hover */
   .topnav a:hover {
-	background-color: rgb(206, 202, 202);
-	color: black;
+	background-color: #FAF5E9;
+	color: #003400;
 	box-shadow: 0px 1px 1px #787878, 0px 0px 5px #787878;
   }
   
   /* Add a color to the active/current link */
   .topnav a.active {
-	background-color: rgb(206, 202, 202);
-	color: black;
+	background-color: #FAF5E9;
+	color: #003400;
 	
   }
