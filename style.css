@@ -38,6 +38,11 @@ h3{
 	box-shadow: 0px 2px 2px #787878, 0px 0px 5px #787878;
 }
 img{
+	box-shadow: 0px 2px 2px #787878, 0px 0px 5px #787878;
+}
+
+ section p:hover img{
+	filter: blur(1.5px);
 	float: right;
 	box-shadow: 0px 2px 2px #787878, 0px 0px 5px #787878;
 	border-radius: 25px;
@@ -46,14 +51,9 @@ img{
 	transition: filter 0.3s ease;
 }
 
-section p:hover img{
-	filter: blur(1.5px);
-}
-
 .project-container:hover img{
 	filter: blur(1.5px);
 }
-
 
 .project-container {
     position: relative;
@@ -88,7 +88,7 @@ section p:hover img{
     transition: filter 0.3s ease;
 }
 
-.project-container:hover img {
+ .project-container:hover img {
     filter: blur(1.5px);
 }
 section{
