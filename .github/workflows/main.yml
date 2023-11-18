@@ -1,28 +1,39 @@
-            - name: Azure Static Website
-  # You may pin to the exact commit or the version.
-  # uses: tibor19/static-website-deploy@b566121f2c83f210fff0b6ed300712bfe2d9ec9f
-  uses: henslw/henslw.github.io
-  with:
-    # The name of the Azure Storage Account. Make sure to call az login before this step, or provide a value for storage-account-key
-    storage-account-name: staticblobaccount999
-    # One of the two shared keys of the storage account
-    storage-account-key: ssd0nbaWKCUg5p64hYxx2vNqfmLpxqvuPcRd2GaJ7UpbbwokDvekbM3rY57ZJKwdaq+UiLecgrgw+AStmS76Mg==
-    # Connection String of the Azure Storage Container
-    connection-string: DefaultEndpointsProtocol=https;AccountName=staticblobaccount999;AccountKey=ssd0nbaWKCUg5p64hYxx2vNqfmLpxqvuPcRd2GaJ7UpbbwokDvekbM3rY57ZJKwdaq+UiLecgrgw+AStmS76Mg==;EndpointSuffix=core.windows.net
-    # Name of the Blob Container Storage
-    blob-container-name: # optional
-    # Access Policy to update in the Container (container | blob | <none>). For private containers do not specity any value.
-    public-access-policy: # optional
-    # Enabled static website
-    enabled-static-website: # optional
-    # Index file for the static website
-    index-file: index.html
-    # 404 Error file for the static website
-    error-file: 404.html
-    # If the existing files should be removed before uploading the new files
-    remove-existing-files: Yes
-    # Sets each blobs cache control.
-    cache-control: # optional
-    # Folder containing the files to be uploaded to the Storage Container
-    folder: # optional, default is .
-          
+name: Azure Static Website
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Deploy to Azure Static Website
+      uses: henslw/henslw.github.io@V2
+      with:
+        # The name of the Azure Storage Account. Make sure to call az login before this step, or provide a value for storage-account-key
+        storage-account-name: staticblobaccount999
+        # One of the two shared keys of the storage account
+        storage-account-key: ssd0nbaWKCUg5p64hYxx2vNqfmLpxqvuPcRd2GaJ7UpbbwokDvekbM3rY57ZJKwdaq+UiLecgrgw+AStmS76Mg==
+        # Connection String of the Azure Storage Container
+        connection-string: DefaultEndpointsProtocol=https;AccountName=staticblobaccount999;AccountKey=ssd0nbaWKCUg5p64hYxx2vNqfmLpxqvuPcRd2GaJ7UpbbwokDvekbM3rY57ZJKwdaq+UiLecgrgw+AStmS76Mg==;EndpointSuffix=core.windows.net
+        # Name of the Blob Container Storage
+        blob-container-name: $web
+        # Access Policy to update in the Container (container | blob | <none>). For private containers do not specify any value.
+        #public-access-policy: # specify the access policy
+        # Enabled static website
+        enabled-static-website: yes
+        # Index file for the static website
+        index-file: index.html
+        # 404 Error file for the static website
+        error-file: 404.html
+        # If the existing files should be removed before uploading the new files
+        remove-existing-files: yes
+        # Sets each blob's cache control.
+        #cache-control: # specify cache control settings
+        # Folder containing the files to be uploaded to the Storage Container
+        #folder: # specify the folder
+
