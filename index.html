@@ -3,90 +3,107 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet"  href="style.css">
-	<title>Resume</title>
+	<title>Resume - Hensley K. Wint</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="countingAPi.js"></script>
+
 </head>
 <body>
-		<div class="title">
-			<h1>H****** *. ****</h1>
-			<p>1**** ***** street &bull; T****, ** 9*** &bull; (***)***-**** &bull; *****@**.*** </p>
+	<div class="topnav">
+		<a class="active" href="index.html">Resume</a>
+		<a href="About.html">About</a>
+		<a href="Projects.html">Projects</a>
+		<a href="Accomplishments.html">Accomplishments</a>
+	  </div> 
+	  <br>
+	  <header>
+		<h1>Hensley K. Wint</h1>
+		<p>Seattle, WA &bull; Hensleywint@gmail.com &bull; <a href="https://www.linkedin.com/in/hensley-wint/" target="_blank" >linkedin.com/in/hensley-wint/</a> </p>
+		<!---<p>Website Visits:<div id="visits">0</div></section></p>-->	
+	  </header>
+	  <br>
+	  <br>
+		<div class="DownloadBtn">
+			<a href="/Documents/Hensley Wint Resume.pdf" download="Hensley Wint Resume">Download Resume</a> 
 		</div>
-
+		<br>
 		
 		<h3>EDUCATION</h3>
 		<section>
 		<p>
-			<strong>Bachelor of Information Technology</strong><br>
-			University of ******, **<br>
+			<strong>Bachelor of Science in Information Technology</strong><br>
+			University of Washionton Tacoma, WA<br>
 			Major: IT<br>
-			GPA 3.6/4.0<br>
-			Expected Graduation Date: June 2023<br>
+			GPA 3.8/4.0<br>
+			Graduation Date: June 2023<br>
 		</p>
 		<p>
 			<strong>Associate in Science</strong><br>
-			***** ***** College, **<br>
+			Seattle Central College<br>
 			Graduation Date: June 2020<br>
 		</p>
 		</section>
-		
-
-		<h3>COMPUTER SKILLS</h3>
-		<section>
-		<p>
-			
-			<strong>Languages:</strong> C#, HTML, JAVA, PYTHON <br>
-			<strong>Operating Environment:</strong> Windows 10<br>
-			<strong>Business Tools: </strong>Word Processing, Presentation,<br>
-			Wordpress Website Builder, Wix Website Builder<br>
-		</p>
-		</section>
-
-
+		<br>
 		<h3>EXPERIENCE</h3>
 		<section>
 		<p>
-			<strong>C# Programing,</strong> January 2022 - Present<br> 
-			University of ****** *****
-			<ul><li>Debugging and troubleshooting C# programs using visual studios.
-			<li>Created calculator applications, and data base programs.</ul>
+			<strong>IT Automation Engineer Intern, Constellation Brands</strong> June 2022 - December 2022<br> 
+			Worked in IT Infrastructure & Operations department on 3+ automation projects for fortune 500 company.
+			<ul><li>Revamped legacy AWS python lambda function so it could retrieve the last activity of IAM users, then return that information to a HTML webpage hosted in an S3 bucket, this allowed the team to limit inactive IAM production accounts, which resulted in improved AWS production environment security.
+			<li>Automated SSL certificate renewal using PowerShell scripting and Cloudflare API, resulting in saving time and money issuing SSL certificates by using Lets Encrypts free certificates.
+			<li>Augmented terraform code for server build continuous integration/continuous deployment (CI/CD) pipeline, therefore creating improved AWS tagging capabilities for automatic server builds.
+			<li>Accepted offer to extend internship past 3 months till end of year.
+			<li>Created Red Hat Enterprise Linux server VM in google cloud (GCP) to simulate companies Linux environment, which created automation script testing environment for duration of internship.
+			<li>Collaborated as a member of Cloud Engineering Agile Scrum team, to complete sprint tasks for cloud technologies including AWS, Wiz, and Azure cloud, resulted in positive feedback on performance during sprint retros/reviews for eagerness to get involved with sprint tasks.
+			<li>Assisted in testing Azure security guard rails and documented results in confluence.
+			<li>Carried out connecting AWS development environment to cloud security auditing tool which allowed team to conduct Proof of concept demo.
+			<li>Worked on PowerShell script to automate the deployment of AWS MGN package to over 200+ Windows Servers.
+			<li>Collaborated with senior engineer on proof of concept to determine if companies automated server build pipeline could be deployed on remote sites.
+			</ul>
+
+			
+		</p>
+	</section>
+	<br>
+		<h3>Projects</h3>
+		<section>
+		<p>
+			<strong>Inventory Management System Web Application, Oboo, Windows 10</strong> January 2023 - March 2023<br> 
+			Collaborated in a team as developer for inventory management system for an electrician business.
+			<ul><li>Configured Odoo Web application to preform inventory management for the client.
+			<li>Installed Odoo inventory application on client’s windows 10 computer and documented installation process.
+			<li>Troubleshooted issues with Odoo inventory management system and documented them for the client.
+			<li>Project resulted in an inventory management system that persistently tracked over 500+ items for client’s.
+			</ul>
 			
 		</p>
 		<p>
-			<strong>Web Design,</strong> October 2021<br>
-			Wix Web Design Platform
-			<ul><li>Worked with a team to create a website for a local restaurant business using the WIX web editor
-			<li>The website resulted in the client reporting an increase business</ul>
-		</p>
-		<p>
-			<strong>Networking Project,</strong> December 2021<br>
-			<ul>
-			<li>Created a simulated LAN consisting of routers, switches, and hosts utilizing Cisco’s packet tracer program
-			<li>The project included subnetting, configuring CISCO networks devices, and testing for end-to-end connectivity</ul>
-		</p>
-		<p>
-			<strong>Python Programming,</strong> March 2020<br>
-			***** ****** College
-			<ul><li>The Project manager for a CS Club team that attended coding events and created 
-			<li>Oversaw the projects and helped with debugging
-			<li>Competed in hackathon events and utilized python in the competitions</ul>
+			<strong>Clock In/Out Web Application, .NET Core 6, Blazor framework</strong> March 2022 - June 2022<br>
+			A worked as developer in a team to create clock in/out application for a local business.
+			<ul><li>Utilized object-oriented programing and async C# functions to create employee and timecard objects, resulting in program managing employee personal records and time records.
+			<li>Developed function for clock-in and out button that enabled updating of timecard SQL records.
+			<li>Utilized HTML, CSS, C# to create front-end UX/UI clock in/out functionality.
+			<li>Deployed program to azure SQL database resulting in persistent data storage.
+			<li>Project resulted in business having fully functional automated clock in/out system, which provided business with better record keeping abilities and easier clocking in/out method for 20+ employees.
+			</ul>
 		</p>
 		</section>
 
-
-		<h3>HONORS</h3>
+		<br>
+		<h3>CERTIFICATIONS AND ACCOMPLISHMENTS</h3>
 		<section>
 		<p>
-			Won 2020 ****** ******* Hackathon.<br>
-			Won the 2020 **** ****, Community Enrichment section.<br>
-			Selected to present 2020 **** ***** project in front of the ***** City Council.<br>
+			<strong>AZ-900: Microsoft Azure Fundamentals</strong> July 2023<br>
+			<ul><li>https://www.credly.com/badges/781a3744-e6d7-413b-a857-bd1eeb314de4/public_url
+			</ul>
 		</p>
-		</section>
+		<p>
+			<strong>Hackathons</strong> Spring 2020 - October 2023<br>
+			<ul><li>Dubhacks(Won WIX subcategory), Seattle U Hackathon(1st place), Cougs Hacks(1st place)
+			</ul>
+		</p>
 
-
-		<h3>ACTIVITIES</h3>
-		<section>
-			<p>
-				Member of ****** ***** computer science club.<br>	
-			</p>
 		</section>
 
 </body>
