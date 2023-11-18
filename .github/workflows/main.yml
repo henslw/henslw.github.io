@@ -9,10 +9,10 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v1
 
     - name: Deploy to Azure Static Website
-      uses: henslw/henslw.github.io@V2
+      uses: henslw/henslw.github.io@V1
       with:
         # The name of the Azure Storage Account. Make sure to call az login before this step, or provide a value for storage-account-key
         storage-account-name: staticblobaccount999
